@@ -3,6 +3,7 @@ package main.ejercicio1;
 public class AlgoritmosEjemplo {
 
     // 1. Imprimir todos los elementos de un arreglo
+    // O(n)
     public static void imprimirArreglo(int[] arr) {
         for (int n : arr) {
             System.out.print(n + " ");
@@ -10,6 +11,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 2. Búsqueda lineal
+    // O(n)
     public static int busquedaLineal(int[] arr, int clave) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == clave)
@@ -19,6 +21,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 3. Búsqueda binaria (arreglo ordenado)
+    // O(log n)
     public static int busquedaBinaria(int[] arr, int clave) {
         int izquierda = 0, derecha = arr.length - 1;
         while (izquierda <= derecha) {
@@ -34,6 +37,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 4. Factorial recursivo
+    // O(n)
     public static int factorial(int n) {
         if (n == 0)
             return 1;
@@ -41,6 +45,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 5. Fibonacci recursivo
+    // O(2^n)
     public static int fibonacci(int n) {
         if (n <= 1)
             return n;
@@ -48,6 +53,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 6. Bubble Sort
+    // O(n^2)
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
@@ -62,6 +68,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 7. Quick Sort
+    // O(n log n)
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
@@ -88,6 +95,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 8. Suma de matriz (matriz cuadrada n x n)
+    // O(n^2)
     public static int sumaMatriz(int[][] matriz) {
         int suma = 0;
         for (int i = 0; i < matriz.length; i++) {
@@ -99,6 +107,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 9. Encontrar el máximo en un arreglo
+    // O(n)
     public static int encontrarMaximo(int[] arr) {
         int max = arr[0];
         for (int n : arr) {
@@ -109,6 +118,7 @@ public class AlgoritmosEjemplo {
     }
 
     // 10. Potencia recursiva
+    // O(n)
     public static int potencia(int base, int exponente) {
         if (exponente == 0)
             return 1;
